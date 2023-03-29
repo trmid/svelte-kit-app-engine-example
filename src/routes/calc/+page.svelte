@@ -8,7 +8,7 @@
 
   const calc = async () => {
     const body = JSON.stringify({ x, y });
-    const response = await fetch('/calc', { body, method: 'POST' });
+    const response = await fetch('/api/calc', { body, method: 'POST' });
     const { result } = await response.json();
     calcResult = result;
   };
